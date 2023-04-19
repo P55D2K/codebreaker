@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool compareJobs(const pair<int, vector<int>>& job1, const pair<int, vector<int>>& job2) {
+    return job1.second[1] > job2.second[1];
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
@@ -18,9 +22,15 @@ int main() {
         painting_jobs[i].push_back(increment_for_job_i);
     }
 
-    for (auto &job : painting_jobs) {
-        cout << "index " << job.first << ", original price " << job.second[0] << ", increment " << job.second[1] << endl;
+    vector<pair<int, vector<int>>> job_vec(painting_jobs.begin(), painting_jobs.end());
+    sort(job_vec.begin(), job_vec.end(), compareJobs);
+    
+    int counter = 0, total_sum = 0;
+    for (auto &job : job_vec) {
+        total_sum += job.second[0] + counter * job.second[1];
+        counter++;
     }
 
+    cout << total_sum;
     return 0;
 }
