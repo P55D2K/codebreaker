@@ -5,16 +5,15 @@
 using namespace std;
 
 #define ll long long
-#define ld long double
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
 
     ll ops; cin >> ops;
-    ld final_output[ops];
-    unordered_map<ld, set<ld>> person_brand;
-    ld tmp_person, tmp_brand;
+    bool final_output[ops];
+    unordered_map<string, set<string>> person_brand;
+    string tmp_person, tmp_brand;
 
     for (ll i = 0; i < ops; i++) {
         cin >> tmp_person >> tmp_brand;
