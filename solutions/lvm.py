@@ -30,5 +30,4 @@ while pc < n:
     elif opcode == "DONE":
         print(stack.pop())
         break
-    
     pc += 1
