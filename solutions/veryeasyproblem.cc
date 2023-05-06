@@ -8,9 +8,9 @@ int main() {
     long long n; cin >> n;
     cout << n << endl;
 
-    // while get_ultrasound() != 0:
-    //     print(get_ultrasound())
-    // go(20, 20, 0.3)
+    // while get_ultrasound()[2] != 0:
+    //     print('distance: ', format(get_ultrasound()[2], '.2f'))
+    //     go(20, 20, 0.3)
 
     return 0;
 }
