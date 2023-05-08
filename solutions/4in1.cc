@@ -1,5 +1,5 @@
 // as i took part in the contest tyx2019 gave me hints on subtask 2 and 3
-// this code does not ac subtask 1 or 4
+// this code does not ac subtask 1 tho
 
 #include <iostream>
 #include <algorithm>
