@@ -6,8 +6,7 @@
 using namespace std;
 
 // fastscan pastebin: https://pastebin.com/Mxk3c1SZ
-void fastscan(int &number)
-{
+void fastscan(int &number) {
     bool negative = false; register int c;
     number = 0; c = getchar();
     if (c == '-') { negative = true; c = getchar(); }
@@ -43,6 +42,11 @@ int main() {
 
         cout << "BEICHEN IOI NOW!!!";
     } // for subproblem 4 im emailing krawthekrow :)
+    // he says he doesnt know but u have to go toilet
+    else if (subtasknum == 4) {
+        cout << "https://tinyurl.com/deccourse22";
+        // click the link :)
+    }
 
     return 0;
 }
