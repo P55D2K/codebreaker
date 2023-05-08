@@ -11,3 +11,4 @@ his github repo: [https://github.com/Xblue707/codebreaker](https://github.com/Xb
 ## python files
 these files are in python cos i couldnt get the cpp to work and i suck :/
 - `lvm.py` [https://codebreaker.xyz/problem/lvm](https://codebreaker.xyz/problem/lvm)
+- `subtaskstiching.py` [https://codebreaker.xyz/problem/subtaskstitching](https://codebreaker.xyz/problem/subtaskstitching) 
